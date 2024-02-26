@@ -26,13 +26,12 @@ void loop() {
 
 ## zk_api
 
-### name space
+### namespace
 ```C++
 namespace zk_api
 ```
-### High Level Function
 
-#### xyz_control
+### xyz_control
 
 水平方向をxy、回転をzで表し単位ベクトルで入力する。powerでモータ出力を決定する。
 
@@ -47,7 +46,7 @@ inline void xyz_control(float x, float y, float z, float power)
 | z       | float        | -1.0 ~ 1.0         |
 | power   | float        | -255.0 ~ 255.0     |
 
-#### control
+### control
 
 特定のモータの回転速度を決める
 
@@ -69,9 +68,7 @@ inline void control_rear_right(int power)
 | power   | int        | -255 ~ 255    |
 
 
-### Low Level Function
-
-#### PWM
+### PWM
 
 特定のモータのPWM dutyを決める
 
@@ -92,7 +89,7 @@ inline void rear_right_pwm(int value)
 |:-----------|------------:|:------------:|
 | value   | int        | 0 ~ 255    |
 
-#### CW/CCW
+### CW/CCW
 
 特定のモータの回転方向を決める
 
