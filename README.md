@@ -18,7 +18,7 @@ void setup() {
 }
 
 void loop() {
-  xyz_control(1.0, 0.0, 0.0, 50);
+  zk_api::xyz_control(1.0, 0.0, 0.0, 50);
 }
 
 ```
